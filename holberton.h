@@ -14,7 +14,7 @@
   *Description: Check specific types for functions
   */
 
-typedef struct sv
+typedef struct func
 {
 	char *md;
 	int (*fmd)(va_list);
@@ -30,7 +30,6 @@ int print_integer(va_list i);
 int print_float(va_list d);
 /*More functions*/
 int _strlen(char *s);
-int _strcmp(char *s1, char *s2);
 int (*get_spc(char s))(va_list);
 int print_numbers(unsigned int num);
 

@@ -21,12 +21,11 @@ For this project execution, we are going to use this authorized functions and ma
 
 Additionally we will create the following functions for the proper execution of the _printf function.
 
-*
-*
-*
-*
-*
-*
+* print_char - Function that print a char.
+* print_string - Function that print a string.
+* print_percent - Function that print a percent.
+* print_num - Function that print a number.
+* print_numbers - Function print numbers.
 
 
 ## Usage
@@ -43,6 +42,6 @@ int _printf(const char *format, ...);
 ## Authors
 
 ***Valentina Castillo***
-Twitter @diavale86
+Twitter [@diavale86](https://twitter.com/home?lang=en)  
 ***Sasha Martina Veloz***
-Twitter @velozsasha
+Twitter [@velozsasha](https://twitter.com/velozsasha)

@@ -19,9 +19,8 @@ _printf function produce an output according to a format.
 
 .PP 
 Upon successful return, this function returns the number of characters printed,
-excluding the NULL byte used to end output to strings.
-If it´s NULL or if the function encounters any errors, a negative value 
-is returned.
+excluding the NULL byte used to end output to strings. If it's NULL or if 
+the function encounters any errors, a negative value is returned.
 
 
 .SH SEE ALSO
@@ -64,7 +63,7 @@ letter. The letters are chosen to have some mnemonic meaning.
 .PP
 %x print a number in hexidecimal (base 16). 
 .PP
-%% print a percent sign (\% also works).
+%% print a percent sign (\\% also works).
 
 
 .B Special characters
@@ -86,13 +85,13 @@ http://mywiki.wooledge.org/BashGuide/SpecialCharacters).
 .PP
 \\ escape the next character.
 .PP
-\\\ print a backslash.
+\\\\ print a backslash.
 .PP
 " start or end of a string
 .PP
 \\" print a double-quote.
 .PP
-\' start or end a character constant.
+\ ' start or end a character constant.
 .PP
 \\' print a single quote.
 .PP
@@ -106,7 +105,7 @@ http://mywiki.wooledge.org/BashGuide/SpecialCharacters).
 .PP
 We also have characters that normally print as you would expect, but when
 you add a backslash they become special. An example of that, is newline
-character (\n). Thus, invoking the alternative meaning of n, which is newline.
+character (\\n). Thus, invoking the alternative meaning of n, which is newline.
 
 .B Here is a partial list:
 

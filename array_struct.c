@@ -20,7 +20,7 @@ int (*get_spc(char s))(va_list)
 	while (sp[index].tp != NULL)
 	{
 		if (s == sp[index].tp[0])
-			return (sp[index].ftp)
+			return (sp[index].ftp);
 		index++;
 	}
 	return (NULL);

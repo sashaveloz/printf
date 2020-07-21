@@ -32,4 +32,4 @@ int (*get_spc(char s))(va_list);
 int print_numbers(unsigned int num);
 
 
-#endef /*HOLBERTON_H*/
+#endif /*HOLBERTON_H*/

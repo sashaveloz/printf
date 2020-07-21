@@ -10,8 +10,8 @@ int (*get_spc(char s))(va_list)
 		{"s", print_string},
 		{"c", print_char},
 		{"%", print_percent},
-		{"i", print_integer},
-		{"d", print_decimal},
+		{"i", print_num},
+		{"d", print_num},
 		{NULL, NULL}
 	};
 

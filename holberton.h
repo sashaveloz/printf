@@ -26,8 +26,7 @@ int _putchar(char c);
 int print_char(va_list c);
 int print_string(va_list s);
 int print_percent(va_list p);
-int print_integer(va_list i);
-int print_decimal(va_list d);
+int print_num(va_list d);
 /*More functions*/
 int _strlen(char *s);
 int (*get_spc(char s))(va_list);

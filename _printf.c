@@ -1,8 +1,10 @@
 #include "holberton.h"
 
 /**
-  *
-  */
+ *_printf - Function similar to printf.
+ *@format: array to arguments.
+ *Return: number of arguments that it  prints.
+ */
 
 int _printf(const char *format, ...)
 {

@@ -8,12 +8,11 @@
 #include <stdarg.h>
 
 /**
-  *struct sv - Struct to select a specific function to printf.
-  *@md: Check types of sv.
-  *@fmd: Call function to print types.
+  *struct func - Struct to select a specific function to printf.
+  *@tp: Check types of sv.
+  *@ftp: Call function to print types.
   *Description: Check specific types for functions
   */
-
 typedef struct func
 {
 	char *tp;

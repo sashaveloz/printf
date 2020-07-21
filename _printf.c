@@ -19,7 +19,7 @@ int _printf(const char *format, ...)
 	{
 		if (format[s] == '%')
 		{
-			func = get_spc(format[s] + 1);
+			func = get_spc(format[s + 1]);
 
 			if (func != NULL)
 			{

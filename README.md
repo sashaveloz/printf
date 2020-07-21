@@ -21,11 +21,12 @@ For this project execution, we are going to use this authorized functions and ma
 
 Additionally we will create the following functions for the proper execution of the _printf function.
 
-* 
-* 
-* 
-* 
-* 
+*
+*
+*
+*
+*
+*
 
 
 ## Usage

@@ -3,8 +3,8 @@
 ## Description
 
 In this Holberton project we are going to create a function that emulates 'printf' functioning.
+function produce an output according to a format. 
 
-All our files will be compiled on Ubuntu 14.04 LTS, and we will use '-Wall -Werror -Wextra -pedantic' gcc flags.
 
 ## Functions
 
@@ -21,17 +21,43 @@ For this project execution, we are going to use this authorized functions and ma
 
 Additionally we will create the following functions for the proper execution of the _printf function.
 
-* print_char - Function that print a char.
+* print_char - Function that print a char. 
 * print_string - Function that print a string.
 * print_percent - Function that print a percent.
 * print_num - Function that print a number.
 * print_numbers - Function print numbers.
 
 
-## Usage
+##Files
+
+* [array_struct.c](https://github.com/sashaveloz/printf/blob/master/array_struct.c)
+* [func_print.c](https://github.com/sashaveloz/printf/blob/master/func_print.c)
+* [holberton.h](https://github.com/sashaveloz/printf/blob/master/holberton.h)
+* [_printf.c](https://github.com/sashaveloz/printf/blob/master/_printf.c)
+* [Flowchart](https://drive.google.com/file/d/1eHBIKipdDJQ8Ejm77TQdJYJ9xVR6Q99_/view?usp=sharing)
+
+
+## Requirements
 
 * Prints a string to the standard output, according to a given format.
-* All files were created and compiled on Ubuntu 14.04.4 LTS USING GCC 4.8.4 with the command 'gcc -Wall -Werror -Wextra -Pedantic *.c' All files were linted for syntax and style with [Betty](https://github.com/holbertonschool/Betty).
+* All files were created and compiled on Ubuntu 14.04.4 LTS USING GCC 4.8.4 with the gcc flags: -Wall -Werror -Wextra -Pedantic *.c'
+* All files were linted for syntax and style with [Betty](https://github.com/holbertonschool/Betty).
+
+
+## Usage
+
+* int age;
+age = 25;
+printf ( "I am %d years old\n", age );
+
+In this example, printf has two arguments. The first is a string: "I am %d years old\n". The second is an integer, age.
+
+* In that case, the first
+
+format specification goes with the first additional argument, second goes with second, and so forth. Here is an example:
+
+int x = 5, y = 10;
+printf ( "x is %d and y is %d\n", x, y );
 
 
 ## Prototype
@@ -42,6 +68,6 @@ int _printf(const char *format, ...);
 ## Authors
 
 ***Valentina Castillo***
-Twitter [@diavale86](https://twitter.com/home?lang=en)  
+Twitter [@diavale86](https://twitter.com/diavale86)  
 ***Sasha Martina Veloz***
 Twitter [@velozsasha](https://twitter.com/velozsasha)

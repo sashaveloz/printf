@@ -14,21 +14,15 @@ int _printf(const char *format, ...);
 .PP
 _printf function produce an output according to a format.
 
-
-.SH RETURN VALUE
-
-.PP 
-Upon successful return, this function returns the number of characters printed,
-excluding the NULL byte used to end output to strings. If it's NULL or if 
-the function encounters any errors, a negative value is returned.
-
-
-.SH SEE ALSO
-
 .PP
-.B Format of the format string
-
 .B Format specifications
+.PP 
+When printf processes its arguments, it starts wrinting the characters
+it finds in the first argument, one by one. When it finds a percent it knows it
+has a format specification. It goes to the next argument and uses its value, 
+printing it according to that format specification.
+.PP
+(See a example for this in the second example in EXAMPLES).
 
 .PP
 When we want to print the content of variables, we need a format specifier,
@@ -65,7 +59,6 @@ letter. The letters are chosen to have some mnemonic meaning.
 .PP
 %% print a percent sign (\\% also works).
 
-
 .B Special characters
 
 .PP
@@ -75,10 +68,7 @@ If we actually want to print a double quote, that is a special character,
 in C, we need to use a backslash (\) as a escape character, to change
 the meaning of the next character after it.
 .PP
-Thus, to print a double-quote you type in backslash double-quote (\").
-(See the list of special characters here:
-http://mywiki.wooledge.org/BashGuide/SpecialCharacters).
-
+Thus, to print a double-quote you type in backslash double-quote (\\").
 
 .B Here is a partial list:
 
@@ -124,6 +114,37 @@ character (\\n). Thus, invoking the alternative meaning of n, which is newline.
 .PP
 \\v vertical tab.
 
+
+.SH RETURN VALUE
+.PP
+Upon successful return, this function returns the number of characters printed,
+excluding the NULL byte used to end output to strings. If it's NULL or if
+the function encounters any errors, a negative value is returned.
+
+.SH EXAMPLES 
+For example:
+.PP
+int age;
+.PP
+age = 25;
+.PP
+printf ( "I am %d years old\\n", age );
+.PP
+Output = "I am 25 years old"
+.PP
+Or:
+.PP
+int x = 5, y = 10;
+.PP
+printf ("x is %d and y is %d\\n", x, y );
+.PP
+Output = "x is 5 and y is 10" 
+
+.SH SEE ALSO
+.PP
+See the list of special characters here:
+.PP
+http://mywiki.wooledge.org/BashGuide/SpecialCharacters
 
 .SH AUTHORS
 

@@ -27,7 +27,6 @@ int print_string(va_list s);
 int print_percent(va_list p);
 int print_num(va_list d);
 /*More functions*/
-int _strlen(char *s);
 int (*get_spc(char s))(va_list);
 int print_numbers(unsigned int num);
 

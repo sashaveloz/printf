@@ -47,35 +47,6 @@ int print_percent(va_list p)
 }
 
 /**
-  *print_num - Function that print a number.
-  *@d: Argument number type va_list.
-  *Return: int
-  */
-
-int print_num(va_list d)
-{
-	unsigned int pos;
-	int i, c;
-
-	i = va_arg(d, int);
-	if (i < 0)
-	{
-		pos = (i * -1);
-		_putchar('-');
-		c = 1;
-	}
-	else
-		pos = i;
-	if (pos > 9)
-	{
-		c += print_numbers(pos);
-		return (c);
-	}
-	_putchar(pos + 48);
-	return (++c);
-}
-
-/**
   *print_numbers - Function print numbers
   *@num: variable type unsigned int.
   *Return: 0.
@@ -95,4 +66,33 @@ int print_numbers(unsigned int num)
 		return (count);
 	}
 	return (0);
+}
+
+/**
+  *print_num - Function that print a number.
+  *@d: Argument number type va_list.
+  *Return: int
+  */
+
+int print_num(va_list d)
+{
+	unsigned int positive;
+	int num, count;
+
+	num = va_arg(d, int);
+	if (num < 0)
+	{
+		positive = (num * -1);
+		_putchar('-');
+		count = 1;
+	}
+	else
+		positive = num;
+	if (positive > 9)
+	{
+		count += print_numbers(positive);
+		return (count);
+	}
+	_putchar(positive + 48);
+	return (++count);
 }

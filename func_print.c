@@ -8,9 +8,9 @@
 
 int print_char(va_list c)
 {
-	char i = va_arg(c, int);
+	char _char = va_arg(c, int);
 
-	_putchar(i);
+	_putchar(_char);
 	return (1);
 }
 
@@ -22,13 +22,13 @@ int print_char(va_list c)
 
 int print_string(va_list s)
 {
-	char *i = va_arg(s, char *);
+	char *str = va_arg(s, char *);
 	int count;
 
-	if (i == NULL)
-		i = "(null)";
-	for (count = 0; i[count] != '\0'; count++)
-		_putchar(i[count]);
+	if (str == NULL)
+		str = "(null)";
+	for (count = 0; str[count] != '\0'; count++)
+		_putchar(str[count]);
 	return (count);
 }
 

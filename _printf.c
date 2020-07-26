@@ -8,38 +8,38 @@
 
 int _printf(const char *format, ...)
 {
-	int s, v = 0;
-	va_list m;
+	int index, counter = 0;
+	va_list list;
 	int (*func)(va_list);
 
-	va_start(m, format);
+	va_start(list, format);
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 
-	for (s = 0; format[s] != '\0'; s++)
+	for (index = 0; format[index] != '\0'; index++)
 	{
-		if (format[s] == '%')
+		if (format[index] == '%')
 		{
-			func = get_spc(format[s + 1]);
+			func = get_spc(format[index + 1]);
 
 			if (func != NULL)
 			{
-				v = v + func(m);
-				s++;
+				counter = counter + func(list);
+				index++;
 			}
 			else
 			{
-				_putchar(format[s]);
-				v++;
+				_putchar(format[index]);
+				counter++;
 			}
 		}
 		else
 		{
-			_putchar(format[s]);
-			v++;
+			_putchar(format[index]);
+			counter++;
 		}
 	}
-	va_end(m);
-	return (v);
+	va_end(list);
+	return (counter);
 }

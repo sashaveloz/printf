@@ -28,12 +28,12 @@ Additionally we will create the following functions for the proper execution of 
 * print_numbers - Function print numbers.
 
 
-##Files
+## Files
 
+* [_printf.c](https://github.com/sashaveloz/printf/blob/master/_printf.c)
 * [array_struct.c](https://github.com/sashaveloz/printf/blob/master/array_struct.c)
 * [func_print.c](https://github.com/sashaveloz/printf/blob/master/func_print.c)
 * [holberton.h](https://github.com/sashaveloz/printf/blob/master/holberton.h)
-* [_printf.c](https://github.com/sashaveloz/printf/blob/master/_printf.c)
 * [Flowchart](https://drive.google.com/file/d/1eHBIKipdDJQ8Ejm77TQdJYJ9xVR6Q99_/view?usp=sharing)
 
 
